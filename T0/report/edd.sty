@@ -1,0 +1,80 @@
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathrsfs,latexsym,stmaryrd}
+\usepackage{color} 
+\usepackage{graphicx}
+\usepackage{textpos}
+\usepackage{array}
+\usepackage{comment}
+\usepackage{xcolor}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\usepackage{listings}
+
+\definecolor{lightblue}{RGB}{114,201,245}
+\definecolor{purple}{RGB}{197,134,192}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{purple},
+	commentstyle=\itshape\color{green},
+	identifierstyle=\color{lightblue},
+	stringstyle=\color{orange},
+	tabsize=2,
+}
+
+\setlength{\parindent}{2em}
+
+\newcommand{\nombreinsert}{}
+\newcommand{\nombre}[1]{\renewcommand{\nombreinsert}{#1}}
+
+\newcommand{\numtareainsert}{}
+\newcommand{\numtarea}[1]{\renewcommand{\numtareainsert}{#1}}
+
+\newcommand{\backgroundcol}{\pagecolor[RGB]{51,51,51}}  
+\newcommand{\textcol}{\color{white}}
+\newcommand{\invert}{\backgroundcol\textcol}
+
+\def \graph {./uc_b.png}
+
+\newenvironment{encabezado}
+{
+	\setcounter{page}{1}
+	\includegraphics[width=2cm]{\graph}
+	\vspace*{-2.3cm}
+	
+	\hspace*{2.1cm}
+	\hspace{-1em}
+	\begin{tabular}{l}
+		\sc Pontificia Universidad Católica de Chile \\
+		\sc Escuela de Ingeniería \\
+		\sc Departamento de Ciencia de la Computación \\
+		\sc IIC2133 -- Estructuras de Datos y Algoritmos -- 2021-1\\
+		\sc Estudiante: \nombreinsert \\
+	\end{tabular}
+
+	\bigskip
+	\vspace*{5mm}
+	\begin{center}
+		{\LARGE \bf Tarea \numtareainsert} \\
+	\end{center}
+}{}
+
+\newenvironment{parte}[1]
+{	
+	\vspace{0.75cm}
+	
+	\noindent
+	{\Large \bf  Pregunta #1} \\
+	
+	\vspace{0.32cm}
+}{}

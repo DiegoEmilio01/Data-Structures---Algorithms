@@ -1,0 +1,13 @@
+# Object files
+*.o
+obj/
+
+# Executables
+*.out
+
+# Debug files
+*.pdb
+
+# Others
+/tests
+*.txt

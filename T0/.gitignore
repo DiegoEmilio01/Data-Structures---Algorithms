@@ -1,0 +1,28 @@
+# Tests
+*.txt
+!tests/testIn.txt
+python/__pycache__/
+obj/
+
+# Latex
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+.pdf
+
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
